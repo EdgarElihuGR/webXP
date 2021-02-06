@@ -1,0 +1,10 @@
+.Taskbar {
+  background: #ECE9D6;
+  display: inline-grid;
+  grid-template: 1fr / 50px 1fr 100px;
+  width: 100%;
+}
+
+.Taskbar * {
+  border: 1px solid gray;
+}

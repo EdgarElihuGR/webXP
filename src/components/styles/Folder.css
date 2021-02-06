@@ -1,0 +1,12 @@
+.Folder {
+  height: 100px;
+  width: 100px;
+}
+
+.Folder > img {
+  width: 100%;
+}
+
+.Folder > p {
+  margin: 0 1rem;
+}
