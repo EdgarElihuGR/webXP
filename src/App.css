@@ -39,3 +39,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* Folders */
+.Folder1 {
+  top: 50%;
+  left: 50%;
+}
+
+/* Darkmode excercise */
+.DarkMode {
+  height: auto;
+  background: #353535;
+}
+
+.DarkMode h3 {
+  color: #67ffd9;
+}
+
+.DarkMode p {
+  color: #61dafb;
+}

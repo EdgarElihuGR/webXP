@@ -1,7 +1,7 @@
 import folderImg from '../assets/img/folderXP-256.png';
 import './styles/Folder.css';
 
-const Folder = () => {
+const Folder = (props) => {
   return(
     <div className="Folder">
       <img src={folderImg} alt="Folder"/>
