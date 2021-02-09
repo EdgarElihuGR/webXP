@@ -1,26 +1,25 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import Header from './components/Header';
 import Desktop from './components/Desktop';
 import Taskbar from './components/Taskbar';
-import Folder from './components/Folder'
+import Folder from './components/Folder';
 import Characters from './components/Characters';
+import ThemeContext from './context/ThemeContext';
 import './App.css';
 
 function App() {
-  const [darkMode, setDarkmode] = useState(false);
-  let darkModeStyle = darkMode ? 'DarkMode' : '';
+  
+  let { theme } = useContext(ThemeContext);
+
   return (
-    <div className={`App ${darkModeStyle}`}>
-      <Header 
-        darkMode = {darkMode}
-        onClick = {() => setDarkmode(!darkMode)}
-      />
-      <Characters darkMode = {darkMode}/>
-      <Desktop>
-        <Folder />
-      </Desktop>
-      <Taskbar />
-    </div>
+      <div className={`App ${theme}`}>
+        <Header />
+        <Characters/>
+        <Desktop>
+          <Folder />
+        </Desktop>
+        <Taskbar />
+      </div>
   );
 }
 

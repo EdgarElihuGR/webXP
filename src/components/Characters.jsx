@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import './styles/Characters.css'
+import ThemeContext from '../context/ThemeContext';
 
-const Characters = (props) => {
+const Characters = () => {
   const [characters, setCharacters] = useState([]);
-  let darkModeStyle = props.darkMode ? 'DarkMode' : '';
+  let { theme } = useContext(ThemeContext);
 
   //Async Await implementation to avoid undefined array
   const getCharacters = async () => {
@@ -18,7 +19,7 @@ const Characters = (props) => {
   }, []);
 
   return(
-    <div className={`Characters ${darkModeStyle}`}>
+    <div className={`Characters ${theme}`}>
       {characters.map(character => (
         <div className="Characters__item">
           <img src={character.image} alt={character.name} />

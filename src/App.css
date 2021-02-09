@@ -59,3 +59,8 @@
 .DarkMode p {
   color: #61dafb;
 }
+
+.LightMode {
+  height: auto;
+  background: #FCFDF5;
+}
