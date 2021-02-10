@@ -42,13 +42,22 @@
 
 /* Folders */
 .Folder1 {
-  top: 50%;
+  top: 15%;
   left: 50%;
+}
+
+.Folder2 {
+  top: 40%;
+  left: 15%;
+}
+
+.Folder3 {
+  top: 5%;
+  left: 10%;
 }
 
 /* Darkmode excercise */
 .DarkMode {
-  height: auto;
   background: #353535;
 }
 
@@ -61,6 +70,5 @@
 }
 
 .LightMode {
-  height: auto;
   background: #FCFDF5;
 }

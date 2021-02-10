@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Desktop from './components/Desktop';
 import Taskbar from './components/Taskbar';
 import Folder from './components/Folder';
-import Characters from './components/Characters';
 import ThemeContext from './context/ThemeContext';
 import './App.css';
 
@@ -14,9 +13,10 @@ function App() {
   return (
       <div className={`App ${theme}`}>
         <Header />
-        <Characters/>
         <Desktop>
-          <Folder />
+          <Folder caption="Fotos" className="Folder1"/>
+          <Folder caption="Videos" className="Folder2"/>
+          <Folder caption="Docs" className="Folder3"/>
         </Desktop>
         <Taskbar />
       </div>

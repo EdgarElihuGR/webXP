@@ -3,9 +3,9 @@ import './styles/Folder.css';
 
 const Folder = (props) => {
   return(
-    <div className="Folder">
+    <div className={`Folder ${props.className}`}>
       <img src={folderImg} alt="Folder"/>
-      <p>Caption</p>
+      <p>{props.caption}</p>
     </div>
   );
 }
